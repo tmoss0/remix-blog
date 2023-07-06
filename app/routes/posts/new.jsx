@@ -1,6 +1,6 @@
 function NewPost() {
   return (
-    <div>New Post</div>
+    <h1>New Post</h1>
   )
 }
 
