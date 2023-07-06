@@ -8,7 +8,7 @@ export const action = async ({ request }) => {
 
   const fields = { title, body };
 
-  console.log(fields);
+  // TODO: Submit to database
 
   return redirect('/posts');
 };
