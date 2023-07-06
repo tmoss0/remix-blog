@@ -5,8 +5,7 @@ function Posts() {
     <>
       <Outlet />
     </>
-  )
+  );
 }
 
-export default Posts
-
+export default Posts;
