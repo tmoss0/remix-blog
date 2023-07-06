@@ -1,4 +1,4 @@
-import { useParams } from "@remix-run/react";
+import { useParams } from '@remix-run/react';
 
 function Post() {
   const params = useParams();
