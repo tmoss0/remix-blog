@@ -2,6 +2,7 @@ import { redirect } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import { db } from '~/utils/db.server';
 
+// SERVER-ONLY FUNCTIONS (loader/action)
 export const loader = async ({ params }) => {
   const post = await db.post.findUnique({
     where: { id: params.postId },

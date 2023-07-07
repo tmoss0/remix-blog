@@ -1,8 +1,10 @@
 import { Outlet, LiveReload, Link, Links, Meta } from '@remix-run/react';
 import globalStylesUrl from '~/styles/globals.css';
 
+// Utilize links across all components
 export const links = () => [{ rel: 'stylesheet', href: globalStylesUrl }];
 
+// Utilize meta across all components
 export const meta = () => {
   const description = 'A cool blog built with Remix';
   const keywords = 'remix, react';
@@ -25,6 +27,7 @@ export default function App() {
   );
 }
 
+// Default document styles for all components
 function Document({ children, title }) {
   return (
     <html lang='en'>
@@ -43,6 +46,7 @@ function Document({ children, title }) {
   );
 }
 
+// Layout function to maintain consistency
 function Layout({ children }) {
   return (
     <>
